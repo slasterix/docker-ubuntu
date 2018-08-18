@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM ubuntu:latest
 LABEL maintainer="pellegrino.digennaro@gmail.com"
 
 ARG DEBIAN_FRONTEND=noninteractive
@@ -9,3 +9,5 @@ RUN \
     locale-gen en_GB.utf8 en_US.utf8 it_IT.utf8 && \
     apt-get -y clean && \
     rm -rf /var/lib/apt/lists/*
+ENTRYPOINT ["/bin/bash", "-e", "/init/entrypoint"]
+CMD ["run"]
