@@ -8,7 +8,7 @@ ENV LC_ALL en_US.UTF-8
 RUN \
     apt-get -y update && apt-get -y upgrade && \
     apt-get install -y language-pack-en-base && \
-    apt-get -y install apt-utils nano curl netcat wget telnet vim bzip2 locales htop && \
+    apt-get -y install apt-utils nano curl netcat wget telnet zip unzip vim bzip2 locales htop && \
     update-locale && \
     locale-gen en_US.UTF-8 && \
     apt-get -y clean && \
