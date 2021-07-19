@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM ubuntu:18.04
 LABEL maintainer="pellegrino.digennaro@gmail.com"
 
 ARG DEBIAN_FRONTEND=noninteractive
